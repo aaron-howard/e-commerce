@@ -46,6 +46,23 @@ npm install
 | `src/routes/layout.css` | Tailwind v4 `@theme` tokens (Stitch palette) |
 | `stitch_e-commerce/stitch/` | Original HTML / design reference (not executed by the app) |
 
+## Publishing to GitHub
+
+The repository must exist under your account (for example **`e-commerce`**). If it is empty:
+
+```sh
+git remote add origin https://github.com/YOUR_GITHUB_USERNAME/e-commerce.git
+git branch -M main
+git push -u origin main
+```
+
+Replace `YOUR_GITHUB_USERNAME` with your GitHub login. Use SSH instead if you prefer:  
+`git@github.com:YOUR_GITHUB_USERNAME/e-commerce.git`
+
+After the first push, open the repo on GitHub → **Settings** → set the **Description** (About) to the suggested line at the top of this README.
+
+Optional: add the same URL to `package.json` as a `repository` field for npm metadata.
+
 ## License
 
 See [LICENSE](LICENSE) (MIT).
