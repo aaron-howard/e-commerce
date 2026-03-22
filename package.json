@@ -1,6 +1,10 @@
 {
 	"name": "e-commerce",
 	"description": "SvelteKit e-commerce MVP (Digital Atelier) with mock catalog, cart, checkout, and localStorage orders—design from Stitch artifacts.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/aaron-howard/e-commerce.git"
+	},
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
