@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-fixed": "#dae2fd",
+                        "secondary-fixed": "#d5e3fd",
+                        "surface-container": "#eceef0",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-dim": "#d8dadc",
+                        "tertiary": "#000000",
+                        "secondary-container": "#d5e3fd",
+                        "error-container": "#ffdad6",
+                        "surface": "#f7f9fb",
+                        "on-background": "#191c1e",
+                        "background": "#f7f9fb",
+                        "tertiary-fixed": "#6ffbbe",
+                        "outline-variant": "#c6c6cd",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#b9c7e0",
+                        "surface-tint": "#565e74",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#7c839b",
+                        "inverse-primary": "#bec6e0",
+                        "secondary": "#515f74",
+                        "primary-fixed-dim": "#bec6e0",
+                        "on-tertiary-container": "#009668",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "surface-container-low": "#f2f4f6",
+                        "on-secondary-fixed": "#0d1c2f",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-secondary-container": "#57657b",
+                        "on-surface-variant": "#45464d",
+                        "primary-container": "#131b2e",
+                        "surface-bright": "#f7f9fb",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "on-tertiary-fixed": "#002113",
+                        "on-secondary-fixed-variant": "#3a485c",
+                        "primary": "#000000",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-variant": "#e0e3e5",
+                        "on-primary-fixed": "#131b2e",
+                        "on-surface": "#191c1e",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#2d3133",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#76777d",
+                        "tertiary-container": "#002113",
+                        "on-error": "#ffffff"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(25, 28, 30, 0.04);
+        }
+    </style>
+</head>
+<body class="text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-slate-900 dark:text-slate-50 font-headline">Digital Atelier</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-headline tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-50 transition-colors" href="#">Collections</a>
+<a class="font-headline tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-50 transition-colors" href="#">Lookbook</a>
+<a class="font-headline tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-50 transition-colors" href="#">Atelier</a>
+<a class="font-headline tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-50 transition-colors" href="#">Archive</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-slate-900 dark:text-slate-50 hover:opacity-70 transition-opacity duration-300">shopping_bag</button>
+<button class="material-symbols-outlined text-slate-900 dark:text-slate-50 border-b-2 border-slate-900 dark:border-slate-50 pb-1">person</button>
+</div>
+</div>
+<div class="bg-slate-200/15 dark:bg-slate-800/15 h-[1px]"></div>
+</nav>
+<main class="pt-24 pb-20 px-4 md:px-8 max-w-screen-2xl mx-auto">
+<!-- Profile Header -->
+<header class="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="flex items-center gap-8">
+<div class="relative w-32 h-32 rounded-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Minimalist portrait of Alexander Vogue" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9iK6wF65qotSYMAWHwA4FqfAVLJTCuS0JyGImVjqAK1Zw5KA9dBzOncBS-7RmC2UFmwDxDgMI3ZujOuA1XWq0t82CWR1CPNVXYL5Q11fS9Ce9Wc37Ju692TEFZxi4qt3HXSYUfSyudmBCMGED7tNg-_tGhvlpb-62RIVh89iunOD4EezLv0OUc2uTWphmZcaV7mRXQj96A8CxAbjJ2gaJMH_MhTQRYXRRx03q2emVI5bkfBTPSYLAFvWoYspr588mRVDKf2B_AwY"/>
+</div>
+<div>
+<h1 class="font-headline text-5xl font-extrabold tracking-tighter mb-1">Alexander Vogue</h1>
+<p class="font-label text-xs uppercase tracking-widest text-on-tertiary-container font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+                        Atelier Member
+                    </p>
+</div>
+</div>
+<div class="hidden md:block">
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-2">Member Since</p>
+<p class="font-headline text-xl font-bold">October 2023</p>
+</div>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16">
+<!-- Navigation Sidebar -->
+<aside class="md:col-span-3">
+<nav class="flex flex-col gap-6 sticky top-32">
+<div class="space-y-4">
+<a class="block font-headline text-lg font-bold text-on-surface border-l-4 border-primary pl-4 -ml-4" href="#">Personal Information</a>
+<a class="block font-headline text-lg font-medium text-on-surface-variant hover:text-on-surface transition-colors" href="#">Order History</a>
+<a class="block font-headline text-lg font-medium text-on-surface-variant hover:text-on-surface transition-colors" href="#">Saved Items</a>
+<a class="block font-headline text-lg font-medium text-on-surface-variant hover:text-on-surface transition-colors" href="#">Addresses</a>
+<a class="block font-headline text-lg font-medium text-on-surface-variant hover:text-on-surface transition-colors" href="#">Settings</a>
+</div>
+<div class="mt-8 pt-8 border-t border-outline-variant/15">
+<button class="flex items-center gap-2 text-error font-headline font-bold text-sm uppercase tracking-wider">
+<span class="material-symbols-outlined">logout</span>
+                            Sign Out
+                        </button>
+</div>
+</nav>
+</aside>
+<!-- Main Content Area -->
+<div class="md:col-span-9 space-y-20">
+<!-- Section: Personal Information -->
+<section id="personal-info">
+<h2 class="font-headline text-2xl font-bold mb-8 tracking-tight">Personal Information</h2>
+<div class="bg-surface-container-lowest p-8 xl:rounded-xl editorial-shadow">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<label class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant">Full Name</label>
+<input class="bg-surface-container-low border-none rounded-lg p-4 focus:ring-0 focus:border-b-2 focus:border-tertiary-fixed transition-all font-body text-on-surface" type="text" value="Alexander Vogue"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant">Email Address</label>
+<input class="bg-surface-container-low border-none rounded-lg p-4 focus:ring-0 focus:border-b-2 focus:border-tertiary-fixed transition-all font-body text-on-surface" type="email" value="alexander.v@vogue.atelier"/>
+</div>
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant">Phone Number</label>
+<input class="bg-surface-container-low border-none rounded-lg p-4 focus:ring-0 focus:border-b-2 focus:border-tertiary-fixed transition-all font-body text-on-surface" type="tel" value="+1 (555) 012-3456"/>
+</div>
+</div>
+<div class="mt-10">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-headline font-bold text-sm uppercase tracking-widest hover:scale-95 transition-transform">
+                                Save Changes
+                            </button>
+</div>
+</div>
+</section>
+<!-- Section: Order History -->
+<section id="order-history">
+<div class="flex items-center justify-between mb-8">
+<h2 class="font-headline text-2xl font-bold tracking-tight">Order History</h2>
+<a class="text-primary font-headline font-bold text-xs uppercase tracking-widest border-b-2 border-primary" href="#">View All</a>
+</div>
+<div class="space-y-4">
+<!-- Order Row -->
+<div class="bg-surface-container-lowest p-6 xl:rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-6 editorial-shadow transition-all hover:bg-surface-container-low">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-surface-container-high xl:rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Minimalist leather backpack detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBUqgDU31WJ4nGVWGaq0GZYlolH5qwwsJ76Np9LWy3Lej99xbxMym9blj8kxkztGDRE_ihMSg4YEFnlidDhA7MMYgf5mah3K8fBO63tE1kTi1LgnHP_CGuLuJulK4Usgzsudnc-2IW-aaES_JDeSJkdiQ_hv1-DQl6lbyVwk4WyD2NU2WCBHDtZFqJVq_FkLb2aUI_T4KbzxlFMTF86yf683Pr6Bckght7KoDLsv2VMR9U3fPnc85RznKC354PgQIq6_zOQ_vjJZU"/>
+</div>
+<div>
+<p class="font-headline font-bold text-on-surface">Order #DA-29103</p>
+<p class="font-body text-sm text-on-surface-variant">Placed on March 12, 2024</p>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-12 w-full md:w-auto">
+<div class="text-right">
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Status</p>
+<p class="font-headline font-bold text-on-tertiary-container">Delivered</p>
+</div>
+<div class="text-right">
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Total</p>
+<p class="font-headline font-bold">$1,240.00</p>
+</div>
+<button class="material-symbols-outlined text-on-surface-variant">chevron_right</button>
+</div>
+</div>
+<!-- Order Row 2 -->
+<div class="bg-surface-container-lowest p-6 xl:rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-6 editorial-shadow transition-all hover:bg-surface-container-low">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-surface-container-high xl:rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Classic minimal watch face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDToyMf9Zo6X4yBDZEf31aw--dLY120iza_eT1evHwIYXSx3bSH7C8JQALu4kgUnBzcngJ6opnwysPLfV6xfYc3qJL0lE8N_LLqjThtvIlrC5Hk6GRyb4ijURWi7Ow9Xo_pepZnfYld9ONSDpIV1OxcIz6QFr4OeKWVpoDYa8jmdpAy1I-DYoqP59hq1eDRvZHfu56V6fj24TqIxYtnvIOUrK3oUk7zCV4l18_3bUoIi2MXT8LkhpZf5OqJsdbUqrSTOcywxziEU7A"/>
+</div>
+<div>
+<p class="font-headline font-bold text-on-surface">Order #DA-28841</p>
+<p class="font-body text-sm text-on-surface-variant">Placed on Feb 04, 2024</p>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-12 w-full md:w-auto">
+<div class="text-right">
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Status</p>
+<p class="font-headline font-bold text-on-tertiary-container">Delivered</p>
+</div>
+<div class="text-right">
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Total</p>
+<p class="font-headline font-bold">$480.00</p>
+</div>
+<button class="material-symbols-outlined text-on-surface-variant">chevron_right</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Saved Items -->
+<section id="saved-items">
+<h2 class="font-headline text-2xl font-bold mb-8 tracking-tight">Saved Items</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product Card -->
+<div class="group">
+<div class="relative aspect-[3/4] xl:rounded-xl overflow-hidden mb-4 bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Architectural black leather tote bag" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXrYhwa5dt9BJrRvmDT0bB0_C5umXAhH2rWyZRVSocH9sBDepLLS0vGFVlqOwBPwC4wO9_aSpNVA04JRbzL-LOSpQmp19wUrjhSYUf5U4mvQGqtguKoB2pcW86vcsnovIRJqONcq3qAXgqNovwAjOKSHdNMmxPqOaXcvevsfvBFGC7TYyh9CIWrYnmNVEwiW9rjsJta33zW63J9e5lZzO_Kve8qBTE1baOHMLrj6sVZZ-mu3GupIJSwHeEZAn6fxw3drXJt3PHUv8"/>
+<div class="absolute top-4 right-4">
+<button class="w-10 h-10 bg-surface-container-lowest/80 backdrop-blur-md rounded-full flex items-center justify-center text-error hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+</div>
+<div class="space-y-1">
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant">Leathergoods</p>
+<h3 class="font-headline font-bold text-lg">Architectural Tote</h3>
+<p class="font-body text-on-surface-variant">$850.00</p>
+</div>
+<div class="mt-4 flex gap-2">
+<button class="flex-1 bg-primary text-on-primary py-3 xl:rounded-full font-headline font-bold text-xs uppercase tracking-widest">Add to Cart</button>
+<button class="w-12 h-12 flex items-center justify-center border border-outline-variant/30 xl:rounded-full text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group">
+<div class="relative aspect-[3/4] xl:rounded-xl overflow-hidden mb-4 bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern minimal desk timepiece" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWeMNpNOVQxvwfAjW76TWJBB1BUz_TqagrcokSkhrczvGgBuO4tE6mIkrPCJLxKt00tsgCnyUBcUAF865pvvx79ZaMbOEi5IPEvVaV-D4hkWB1kOOiIojuASSKPBpJLIyPCzEFLHVO4PWoFV6W3YhWBJpF7WtYrb_-v1Tcwzb3K_wNH4odcTKpfGA4SQbxXe_ZqpYIC0-IwGdokhHoty92CvYhlJJc5DXB_yM1JL7WyGICLGgltbHqiHaUnwlH9puFrLEg-zYmxR8"/>
+<div class="absolute top-4 right-4">
+<button class="w-10 h-10 bg-surface-container-lowest/80 backdrop-blur-md rounded-full flex items-center justify-center text-error hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+</div>
+<div class="space-y-1">
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant">Horology</p>
+<h3 class="font-headline font-bold text-lg">Monolith Watch</h3>
+<p class="font-body text-on-surface-variant">$320.00</p>
+</div>
+<div class="mt-4 flex gap-2">
+<button class="flex-1 bg-primary text-on-primary py-3 xl:rounded-full font-headline font-bold text-xs uppercase tracking-widest">Add to Cart</button>
+<button class="w-12 h-12 flex items-center justify-center border border-outline-variant/30 xl:rounded-full text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-screen-2xl mx-auto gap-8">
+<div class="font-manrope font-bold text-lg text-slate-900 dark:text-slate-50">Digital Atelier</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-inter text-xs tracking-wider uppercase text-slate-500 dark:text-slate-400 hover:underline decoration-slate-400 underline-offset-4" href="#">Privacy Policy</a>
+<a class="font-inter text-xs tracking-wider uppercase text-slate-500 dark:text-slate-400 hover:underline decoration-slate-400 underline-offset-4" href="#">Terms of Service</a>
+<a class="font-inter text-xs tracking-wider uppercase text-slate-500 dark:text-slate-400 hover:underline decoration-slate-400 underline-offset-4" href="#">Shipping</a>
+<a class="font-inter text-xs tracking-wider uppercase text-slate-500 dark:text-slate-400 hover:underline decoration-slate-400 underline-offset-4" href="#">Returns</a>
+<a class="font-inter text-xs tracking-wider uppercase text-slate-500 dark:text-slate-400 hover:underline decoration-slate-400 underline-offset-4" href="#">Contact</a>
+</div>
+<div class="font-inter text-xs tracking-wider uppercase text-slate-500 dark:text-slate-400">
+                © 2024 Digital Atelier. All Rights Reserved.
+            </div>
+</div>
+</footer>
+</body></html>

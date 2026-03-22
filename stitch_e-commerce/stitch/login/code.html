@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Digital Atelier | Sign In</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container": "#eceef0",
+                        "primary": "#000000",
+                        "inverse-surface": "#2d3133",
+                        "inverse-primary": "#bec6e0",
+                        "surface-container-low": "#f2f4f6",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "primary-fixed": "#dae2fd",
+                        "error-container": "#ffdad6",
+                        "surface": "#f7f9fb",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#e6e8ea",
+                        "on-tertiary-container": "#009668",
+                        "on-primary-container": "#7c839b",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#002113",
+                        "surface-variant": "#e0e3e5",
+                        "tertiary-fixed": "#6ffbbe",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-tint": "#565e74",
+                        "background": "#f7f9fb",
+                        "on-secondary-fixed-variant": "#3a485c",
+                        "secondary-container": "#d5e3fd",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#57657b",
+                        "secondary": "#515f74",
+                        "on-tertiary-fixed": "#002113",
+                        "surface-bright": "#f7f9fb",
+                        "on-primary-fixed": "#131b2e",
+                        "tertiary": "#000000",
+                        "on-background": "#191c1e",
+                        "primary-fixed-dim": "#bec6e0",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#0d1c2f",
+                        "surface-dim": "#d8dadc",
+                        "secondary-fixed-dim": "#b9c7e0",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "outline-variant": "#c6c6cd",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-surface": "#191c1e",
+                        "secondary-fixed": "#d5e3fd",
+                        "outline": "#76777d",
+                        "primary-container": "#131b2e",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#45464d"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #000000 0%, #131b2e 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased overflow-x-hidden">
+<!-- Top Navigation (Shell suppressed for linear task, only showing Logo) -->
+<header class="fixed top-0 w-full z-50 glass-header">
+<div class="flex justify-between items-center px-6 py-8 w-full max-w-screen-2xl mx-auto">
+<span class="text-xl font-headline font-bold tracking-tighter text-on-surface">Digital Atelier</span>
+<a class="text-on-surface-variant font-label text-xs tracking-widest uppercase hover:text-primary transition-colors" href="#">Close</a>
+</div>
+</header>
+<main class="min-h-screen flex flex-col md:flex-row">
+<!-- Editorial Image Section (Desktop Only) -->
+<div class="hidden md:flex w-1/2 bg-surface-container-low items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<img alt="Architectural interior background" class="w-full h-full object-cover" data-alt="Minimalist architectural interior with clean lines and soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQviweoh3LVY16Kf7B3ID19GQIIVCdBpkd0E7vNRuumJwLXIZTrMm9g2_FRcqkgydvxOR2MjwJY1IEuaszDDXuOumD9BrpE9QYxBnnoLLq6TXEMNFxFK2VFRO-BD28UhJn_eu_n3IQYrTzapvMr5Mu1MGdVhp25y_8YK3MR0m-hFIc2oEhfZSYaPdYdnYWHU2Ovmk8WlVzLKgWb_uAMCuhwzJ3Cliyg-fyuLOS6ikRm61jkg9G-hiMrlQkv0OnHmaF7PhEmXFYEUY"/>
+</div>
+<div class="relative z-10 px-20">
+<h1 class="font-headline text-[5rem] leading-[0.9] font-extrabold tracking-tighter text-on-surface mb-8">
+                    Elevated <br/>Design.
+                </h1>
+<p class="font-body text-xl text-on-surface-variant max-w-md leading-relaxed">
+                    Access your curated collection of digital assets and architectural blueprints.
+                </p>
+</div>
+<!-- Asymmetric Floating Element -->
+<div class="absolute bottom-20 right-0 w-64 h-80 bg-surface-container-lowest translate-x-12 rounded-xl shadow-sm overflow-hidden">
+<img alt="Minimalist design detail" class="w-full h-full object-cover" data-alt="Detailed close up of black ceramic sculpture on white table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJAAX1JCYcDNs4vbdEms7tEcRLxCAEooGUtBvTHnrmzjAW86HToj9_ZJfiu53Trh-0Wp18cn-1zPFKax_eg5rx2-wyRh0QGyHLJYhKYJJ2gDF1qtM22SUsqfAyMTjott570IJdL_eBQznnFXKutcKmTAKfCDnbzt99z3fipGSXrvhTaP8xcjs_qBqs6gN85-bgQVj9VF5OE_K2Y-BUmWAScy8PtWyx43dzmhf9hh6_9mVcSP2q2PD21oTaGgCoxcNm5_gZtApl6Dw"/>
+</div>
+</div>
+<!-- Login Form Section -->
+<div class="w-full md:w-1/2 flex items-center justify-center p-6 md:p-24 pt-32 md:pt-24 bg-surface">
+<div class="w-full max-w-sm space-y-12">
+<!-- Header -->
+<div class="space-y-2">
+<h2 class="font-headline text-4xl font-bold tracking-tight text-on-surface">Sign In</h2>
+<p class="font-body text-on-surface-variant">Enter your details to access your atelier.</p>
+</div>
+<!-- Form -->
+<form class="space-y-6">
+<div class="space-y-4">
+<div class="group">
+<label class="block font-label text-[10px] uppercase tracking-widest text-on-surface-variant mb-2" for="email">Email Address</label>
+<input class="w-full bg-surface-container-low border-0 px-4 py-4 rounded-xl focus:ring-0 transition-all focus:bg-surface-container-lowest" id="email" name="email" placeholder="name@atelier.com" type="email"/>
+<div class="h-0.5 w-0 group-focus-within:w-full bg-tertiary-fixed transition-all duration-500"></div>
+</div>
+<div class="group">
+<div class="flex justify-between items-center mb-2">
+<label class="block font-label text-[10px] uppercase tracking-widest text-on-surface-variant" for="password">Password</label>
+<a class="font-label text-[10px] uppercase tracking-widest text-primary hover:opacity-70 transition-opacity" href="#">Forgot?</a>
+</div>
+<input class="w-full bg-surface-container-low border-0 px-4 py-4 rounded-xl focus:ring-0 transition-all focus:bg-surface-container-lowest" id="password" name="password" placeholder="••••••••" type="password"/>
+<div class="h-0.5 w-0 group-focus-within:w-full bg-tertiary-fixed transition-all duration-500"></div>
+</div>
+</div>
+<button class="w-full primary-gradient text-on-primary py-4 rounded-full font-headline font-semibold text-sm tracking-wide transition-all active:scale-[0.98] hover:shadow-lg" type="submit">
+                        Sign In
+                    </button>
+</form>
+<!-- Divider -->
+<div class="relative flex items-center gap-4">
+<div class="flex-grow h-px bg-outline-variant/20"></div>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Or continue with</span>
+<div class="flex-grow h-px bg-outline-variant/20"></div>
+</div>
+<!-- Social Logins -->
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-3 py-3 rounded-full bg-surface-container-lowest border border-outline-variant/20 hover:bg-surface-container-low transition-colors group">
+<span class="material-symbols-outlined text-xl">google</span>
+<span class="font-label text-xs font-semibold">Google</span>
+</button>
+<button class="flex items-center justify-center gap-3 py-3 rounded-full bg-surface-container-lowest border border-outline-variant/20 hover:bg-surface-container-low transition-colors group">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">ios</span>
+<span class="font-label text-xs font-semibold">Apple</span>
+</button>
+</div>
+<!-- Signup Link -->
+<p class="text-center font-body text-sm text-on-surface-variant">
+                    Don't have an account? 
+                    <a class="text-primary font-semibold hover:underline underline-offset-4 decoration-1" href="#">Create an account</a>
+</p>
+</div>
+</div>
+</main>
+<!-- Simple Footer (Modified for login screen context) -->
+<footer class="w-full py-8 px-6 bg-surface">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 w-full max-w-screen-2xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-1">
+<span class="text-sm font-headline font-bold tracking-tighter text-on-surface">Digital Atelier</span>
+<p class="font-label text-[10px] tracking-wide uppercase text-on-surface-variant">© 2024 Digital Atelier. All rights reserved.</p>
+</div>
+<nav class="flex gap-8">
+<a class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant hover:text-primary transition-colors" href="#">Support</a>
+</nav>
+</div>
+</footer>
+</body></html>

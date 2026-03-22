@@ -1,0 +1,97 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+
+@theme {
+	--font-headline: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+	--font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+	--font-label: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+	--color-surface-bright: #f7f9fb;
+	--color-on-tertiary-fixed: #002113;
+	--color-inverse-on-surface: #eff1f3;
+	--color-on-secondary-fixed-variant: #3a485c;
+	--color-outline-variant: #c6c6cd;
+	--color-on-primary-fixed-variant: #3f465c;
+	--color-secondary-fixed: #d5e3fd;
+	--color-inverse-primary: #bec6e0;
+	--color-surface-tint: #565e74;
+	--color-secondary-fixed-dim: #b9c7e0;
+	--color-outline: #76777d;
+	--color-secondary: #515f74;
+	--color-primary: #000000;
+	--color-primary-fixed: #dae2fd;
+	--color-surface-container-lowest: #ffffff;
+	--color-primary-container: #131b2e;
+	--color-tertiary-fixed: #6ffbbe;
+	--color-on-secondary-fixed: #0d1c2f;
+	--color-on-surface-variant: #45464d;
+	--color-on-surface: #191c1e;
+	--color-surface-variant: #e0e3e5;
+	--color-primary-fixed-dim: #bec6e0;
+	--color-surface-dim: #d8dadc;
+	--color-on-secondary: #ffffff;
+	--color-inverse-surface: #2d3133;
+	--color-error-container: #ffdad6;
+	--color-on-primary: #ffffff;
+	--color-tertiary-fixed-dim: #4edea3;
+	--color-on-secondary-container: #57657b;
+	--color-surface-container: #eceef0;
+	--color-surface-container-highest: #e0e3e5;
+	--color-on-error: #ffffff;
+	--color-surface: #f7f9fb;
+	--color-on-tertiary-container: #009668;
+	--color-surface-container-low: #f2f4f6;
+	--color-secondary-container: #d5e3fd;
+	--color-tertiary-container: #002113;
+	--color-background: #f7f9fb;
+	--color-on-primary-fixed: #131b2e;
+	--color-on-tertiary-fixed-variant: #005236;
+	--color-tertiary: #000000;
+	--color-on-primary-container: #7c839b;
+	--color-surface-container-high: #e6e8ea;
+	--color-on-error-container: #93000a;
+	--color-error: #ba1a1a;
+	--color-on-tertiary: #ffffff;
+	--color-on-background: #191c1e;
+
+	--radius-xl: 0.5rem;
+	--radius-lg: 0.25rem;
+}
+
+@layer base {
+	body {
+		@apply bg-surface text-on-surface antialiased font-body;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: var(--font-headline);
+	}
+}
+
+@layer utilities {
+	.material-symbols-outlined {
+		font-variation-settings:
+			'FILL' 0,
+			'wght' 400,
+			'GRAD' 0,
+			'opsz' 24;
+		vertical-align: middle;
+	}
+	.hide-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+	.hide-scrollbar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+	.shadow-ambient {
+		box-shadow: 0 20px 40px rgba(25, 28, 30, 0.06);
+	}
+	.btn-primary-gradient {
+		background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-container) 100%);
+	}
+}

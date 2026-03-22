@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up | Digital Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container": "#eceef0",
+              "primary": "#000000",
+              "inverse-surface": "#2d3133",
+              "inverse-primary": "#bec6e0",
+              "surface-container-low": "#f2f4f6",
+              "on-tertiary-fixed-variant": "#005236",
+              "primary-fixed": "#dae2fd",
+              "error-container": "#ffdad6",
+              "surface": "#f7f9fb",
+              "on-secondary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#e6e8ea",
+              "on-tertiary-container": "#009668",
+              "on-primary-container": "#7c839b",
+              "error": "#ba1a1a",
+              "tertiary-container": "#002113",
+              "surface-variant": "#e0e3e5",
+              "tertiary-fixed": "#6ffbbe",
+              "surface-container-highest": "#e0e3e5",
+              "surface-tint": "#565e74",
+              "background": "#f7f9fb",
+              "on-secondary-fixed-variant": "#3a485c",
+              "secondary-container": "#d5e3fd",
+              "on-error": "#ffffff",
+              "on-secondary-container": "#57657b",
+              "secondary": "#515f74",
+              "on-tertiary-fixed": "#002113",
+              "surface-bright": "#f7f9fb",
+              "on-primary-fixed": "#131b2e",
+              "tertiary": "#000000",
+              "on-background": "#191c1e",
+              "primary-fixed-dim": "#bec6e0",
+              "on-primary-fixed-variant": "#3f465c",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed": "#0d1c2f",
+              "surface-dim": "#d8dadc",
+              "secondary-fixed-dim": "#b9c7e0",
+              "tertiary-fixed-dim": "#4edea3",
+              "outline-variant": "#c6c6cd",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#eff1f3",
+              "on-surface": "#191c1e",
+              "secondary-fixed": "#d5e3fd",
+              "outline": "#76777d",
+              "primary-container": "#131b2e",
+              "on-tertiary": "#ffffff",
+              "on-surface-variant": "#45464d"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(25, 28, 30, 0.06);
+        }
+        .glass-header {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-tertiary-fixed">
+<header class="fixed top-0 w-full z-50 glass-header">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-screen-2xl mx-auto">
+<span class="text-xl font-bold tracking-tighter text-slate-900 font-headline">Digital Atelier</span>
+<a class="text-slate-500 hover:text-black transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</a>
+</div>
+</header>
+<main class="min-h-screen flex items-center justify-center pt-20 px-6">
+<div class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-12 gap-0 md:gap-16 items-center">
+<div class="hidden md:block md:col-span-7 relative">
+<div class="absolute -top-12 -left-8 z-10">
+<h1 class="font-headline text-[5rem] font-extrabold tracking-tighter leading-[0.9] text-primary">
+                        Design<br/>Beyond<br/>Limits.
+                    </h1>
+</div>
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low aspect-[4/5] flex items-center justify-center">
+<img alt="Minimalist architectural workspace with high-end furniture" class="w-full h-full object-cover grayscale opacity-90" data-alt="High-end minimalist architectural interior design aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiyF1DOhLW98JZrLHituGnxKr37oJR5CHE7gr6hal-oxwRf9_PK1JuNMbwgLvAdBl9A-f8WqvkpwbGp3hTNK4j2PPyl-ejBitKlqrOvzZpQTL2JK8IBdpZTojBToLjgI5-PgfOFgpoLz216mMJlLPFUVXtNHlxDfcnb6WELs4ivuK0HBU1uRdpPCjFa1pd4Jj033NlkZRfbKcJoEStpmYxEllr3p4Bl-t-Ti8tSLkmlfYJLCZS5agREtKD1wmOiLsRPY4twJVycQM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface/40 to-transparent"></div>
+</div>
+</div>
+<div class="md:col-span-5 py-12 md:py-0">
+<div class="space-y-10">
+<div class="space-y-3">
+<span class="font-label text-xs uppercase tracking-[0.15em] text-on-surface-variant font-semibold">Join the Collective</span>
+<h2 class="font-headline text-4xl font-bold tracking-tight text-on-surface">Create Account</h2>
+<p class="text-on-surface-variant leading-relaxed">Access the curated world of Digital Atelier and exclusive archival collections.</p>
+</div>
+<form class="space-y-6">
+<div class="space-y-1.5 group">
+<label class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant font-bold" for="full_name">Full Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3.5 focus:ring-0 focus:outline-none focus:bg-surface-container-high transition-all border-b-2 border-transparent focus:border-tertiary-fixed placeholder:text-slate-400" id="full_name" placeholder="Johnathan Doe" type="text"/>
+</div>
+<div class="space-y-1.5 group">
+<label class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant font-bold" for="email">Email Address</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3.5 focus:ring-0 focus:outline-none focus:bg-surface-container-high transition-all border-b-2 border-transparent focus:border-tertiary-fixed placeholder:text-slate-400" id="email" placeholder="atelier@studio.com" type="email"/>
+</div>
+<div class="space-y-1.5 group">
+<label class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant font-bold" for="password">Password</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3.5 focus:ring-0 focus:outline-none focus:bg-surface-container-high transition-all border-b-2 border-transparent focus:border-tertiary-fixed placeholder:text-slate-400" id="password" placeholder="••••••••" type="password"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+<div class="pt-2">
+<button class="w-full bg-primary text-on-primary py-4 px-8 rounded-full font-headline font-bold tracking-tight text-lg hover:opacity-90 transition-all shadow-xl shadow-primary/10" type="submit">
+                                Create Account
+                            </button>
+</div>
+</form>
+<div class="relative py-4">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-outline-variant/30"></div>
+</div>
+<div class="relative flex justify-center text-[10px] uppercase tracking-[0.2em] font-bold text-on-surface-variant">
+<span class="bg-surface px-4">Or Continue With</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-surface-container-lowest editorial-shadow hover:bg-surface-container-high transition-colors text-sm font-semibold">
+<img alt="Google Logo" class="w-4 h-4" data-alt="Google authentication service logo icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWr0ZbEOcSJe_gmQ8vXZF_5qG3wDO8C5D7Pg8J85ZsN7IAPWh6JOrImlYPaXPtTmsHijlFyNj4q4N8mEAo7xfQc4oGfff54r6qHmkhh3iupwvou4-DT2FcAlC49TqAGcFfEiREVUAWzzjF5Lmm_r__OKtk1oIGuYewVOUi_kX8QfrH1ajkCw4A935zgB-JzMtYFz240rmwCw2s73T3-uvTblkEWkQmzvDwic3dDN3fw1Z4gFgAColny5G8aW6G5rGrPqk2f1YSAkE"/>
+                            Google
+                        </button>
+<button class="flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-surface-container-lowest editorial-shadow hover:bg-surface-container-high transition-colors text-sm font-semibold">
+<span class="material-symbols-outlined text-[18px]">ios</span>
+                            Apple
+                        </button>
+</div>
+<div class="text-center">
+<p class="text-on-surface-variant text-sm">
+                            Already a member? 
+                            <a class="text-primary font-bold underline underline-offset-4 hover:decoration-tertiary-fixed transition-all ml-1" href="#">Login here</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="w-full py-12 px-6 bg-slate-100 dark:bg-slate-900 mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 w-full max-w-screen-2xl mx-auto">
+<span class="text-sm font-bold tracking-tighter font-headline">Digital Atelier</span>
+<div class="flex gap-8">
+<a class="font-inter text-xs tracking-wide uppercase text-slate-500 hover:text-black transition-all duration-300" href="#">Privacy Policy</a>
+<a class="font-inter text-xs tracking-wide uppercase text-slate-500 hover:text-black transition-all duration-300" href="#">Terms of Service</a>
+<a class="font-inter text-xs tracking-wide uppercase text-slate-500 hover:text-black transition-all duration-300" href="#">Support</a>
+</div>
+<p class="font-inter text-xs tracking-wide uppercase text-slate-500">© 2024 Digital Atelier. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

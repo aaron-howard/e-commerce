@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#f7f9fb",
+              "on-tertiary-fixed": "#002113",
+              "inverse-on-surface": "#eff1f3",
+              "on-secondary-fixed-variant": "#3a485c",
+              "outline-variant": "#c6c6cd",
+              "on-primary-fixed-variant": "#3f465c",
+              "secondary-fixed": "#d5e3fd",
+              "inverse-primary": "#bec6e0",
+              "surface-tint": "#565e74",
+              "secondary-fixed-dim": "#b9c7e0",
+              "outline": "#76777d",
+              "secondary": "#515f74",
+              "primary": "#000000",
+              "primary-fixed": "#dae2fd",
+              "surface-container-lowest": "#ffffff",
+              "primary-container": "#131b2e",
+              "tertiary-fixed": "#6ffbbe",
+              "on-secondary-fixed": "#0d1c2f",
+              "on-surface-variant": "#45464d",
+              "on-surface": "#191c1e",
+              "surface-variant": "#e0e3e5",
+              "primary-fixed-dim": "#bec6e0",
+              "surface-dim": "#d8dadc",
+              "on-secondary": "#ffffff",
+              "inverse-surface": "#2d3133",
+              "error-container": "#ffdad6",
+              "on-primary": "#ffffff",
+              "tertiary-fixed-dim": "#4edea3",
+              "on-secondary-container": "#57657b",
+              "surface-container": "#eceef0",
+              "surface-container-highest": "#e0e3e5",
+              "on-error": "#ffffff",
+              "surface": "#f7f9fb",
+              "on-tertiary-container": "#009668",
+              "surface-container-low": "#f2f4f6",
+              "secondary-container": "#d5e3fd",
+              "tertiary-container": "#002113",
+              "background": "#f7f9fb",
+              "on-primary-fixed": "#131b2e",
+              "on-tertiary-fixed-variant": "#005236",
+              "tertiary": "#000000",
+              "on-primary-container": "#7c839b",
+              "surface-container-high": "#e6e8ea",
+              "on-error-container": "#93000a",
+              "error": "#ba1a1a",
+              "on-tertiary": "#ffffff",
+              "on-background": "#191c1e"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex items-center justify-between px-8 py-4 max-w-full mx-auto font-['Manrope'] tracking-tight text-slate-900 dark:text-slate-50">
+<div class="text-2xl font-black tracking-tighter text-slate-900 dark:text-slate-50">Digital Atelier</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-900 dark:text-slate-50 font-bold border-b-2 border-slate-900 dark:border-slate-50 pb-1" href="#">Shop</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-50 transition-colors" href="#">Collections</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-50 transition-colors" href="#">Editorial</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-50 transition-colors" href="#">About</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="hover:opacity-70 transition-opacity duration-300 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button class="hover:opacity-70 transition-opacity duration-300 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+<div class="bg-slate-100 dark:bg-slate-900 h-[1px] w-full"></div>
+</nav>
+<main class="pt-24 pb-20">
+<!-- Product Section -->
+<section class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Gallery: Asymmetric Bento Style -->
+<div class="lg:col-span-7 grid grid-cols-2 gap-4">
+<div class="col-span-2 overflow-hidden rounded-xl bg-surface-container-lowest">
+<img alt="Main product view" class="w-full h-[600px] object-cover hover:scale-105 transition-transform duration-700" data-alt="Minimalist luxury watch on a clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE_MrEqUtJKcNwU2ufDVXN4SehZ1pcD2hz2AGGw26sM4i33UH2Qy6bCf0UEOsUBb7Id-0f41mhrxnBJU9_PdB9qWyqB9HM1KsEVj-iW-GtHk28KnQ27OSpcP_hJvKwFNzWJ49W1Q1rrTdrFzuKCDQZAhdMYt9iBM7lsBOFFXcWUIkgNGYMU9ZMFn4xl1W6ifCo6gbtbQKtMxp9RHNZecpQmeIj-VW1AaFXLJrh7nckAM-9EGuPjv6VEO2KEBqwcJgEfaINzxuR4XA"/>
+</div>
+<div class="overflow-hidden rounded-xl bg-surface-container-lowest">
+<img alt="Product detail 1" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-700" data-alt="Close up of a watch dial craftsmanship" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2t9-bhB0fHEewhxoeyXMO2RcBEqNjJWtpIHbSrpZ89DF-pqK5fgK3waoXdsRyQxduMjSQuH4PR9rIoOWwyxYrZx-7r8UK2SH_gvlAv5D422dapXQ03oc9Wrm5Uco5NQF9oc-ig6d3p4wus6MR1QtAYtflcBrb5EJZDgGxFMI80VNwN5dRjnoDJrJ4LvbZazv8Bb9UrWiADb94jfny55yh4zSJBMIf5gxqFMMTgb3btSKlCGnjVa73KKwBaSEyCPvc8FlxFl0QL2A"/>
+</div>
+<div class="overflow-hidden rounded-xl bg-surface-container-lowest">
+<img alt="Product detail 2" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-700" data-alt="Watch leather strap detail and stitching" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADSqUidUlVO6Q5EKuv7xi3GJgjk-DIqxMfFuNIMh-AdMs_Mt827V_LCdQnJWxHnGl5h3jYXUXumkNKu2M0l6px47Mo2vDi8IKQ6sgkOlZoQ93W8jfxz7afXc38FJk0jr0ieOrQ0FkmQon1UCbMK5Km2W6N_l9MDuYJfceK3a1Ws6ZQ8zLYhKyK0__R-HAMg5YsNCzfox2fAHgD1NOAhqp9LLMkJ0Pbm-TOCWFjRcnNoeTRlaWNAf4fOlrzNmZz-ng_lyY6Xsc4Q_s"/>
+</div>
+</div>
+<!-- Product Info -->
+<div class="lg:col-span-5 flex flex-col space-y-8">
+<div>
+<span class="font-label text-on-surface-variant tracking-[0.05em] uppercase text-xs">Architectural Series</span>
+<h1 class="text-5xl font-headline font-extrabold tracking-tighter mt-2 text-on-surface">Atelier Chrono 01</h1>
+<p class="text-2xl font-headline mt-4 text-on-surface">$1,450.00</p>
+</div>
+<div class="space-y-4">
+<p class="text-body-lg text-on-surface-variant leading-relaxed">
+                        A masterclass in geometric restraint. The Chrono 01 features a brushed titanium casing and a sapphire crystal face, designed for those who find beauty in the precision of the grid.
+                    </p>
+<div class="flex items-center space-x-2">
+<div class="flex text-on-tertiary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<span class="text-sm font-label text-on-surface-variant">(48 Reviews)</span>
+</div>
+</div>
+<!-- Configurators -->
+<div class="space-y-6 pt-6 border-t border-outline-variant/20">
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant block mb-3">Case Finish</span>
+<div class="flex space-x-3">
+<button class="w-10 h-10 rounded-full border-2 border-primary bg-slate-200 p-0.5"><div class="w-full h-full rounded-full bg-slate-400"></div></button>
+<button class="w-10 h-10 rounded-full border-2 border-transparent hover:border-outline-variant transition-colors bg-slate-200 p-0.5"><div class="w-full h-full rounded-full bg-slate-800"></div></button>
+</div>
+</div>
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant block mb-3">Quantity</span>
+<div class="flex items-center w-32 justify-between bg-surface-container-low rounded-full px-4 py-2">
+<button class="text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">remove</span></button>
+<span class="font-bold">1</span>
+<button class="text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">add</span></button>
+</div>
+</div>
+</div>
+<!-- CTA -->
+<div class="flex flex-col space-y-3 pt-4">
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary py-5 rounded-full font-bold text-lg hover:shadow-lg transition-all active:scale-[0.98]">
+                        Add to Cart
+                    </button>
+<button class="w-full bg-surface-container-highest text-on-surface py-5 rounded-full font-bold transition-all hover:bg-surface-variant">
+                        Add to Wishlist
+                    </button>
+</div>
+<div class="pt-8 space-y-4">
+<details class="group border-b border-outline-variant/20 pb-4" open="">
+<summary class="flex justify-between items-center cursor-pointer list-none font-headline font-bold">
+                            Product Specifications
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-4 text-sm text-on-surface-variant space-y-2 font-body leading-relaxed">
+<p>• Movement: Swiss Automatic ETA 2824-2</p>
+<p>• Case: 40mm Grade 5 Titanium</p>
+<p>• Water Resistance: 10 ATM (100m)</p>
+<p>• Strap: Hand-stitched Italian leather</p>
+</div>
+</details>
+<details class="group border-b border-outline-variant/20 pb-4">
+<summary class="flex justify-between items-center cursor-pointer list-none font-headline font-bold">
+                            Shipping &amp; Returns
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-4 text-sm text-on-surface-variant font-body leading-relaxed">
+                            Complimentary carbon-neutral shipping on all orders over $500. Returns accepted within 30 days of delivery.
+                        </div>
+</details>
+</div>
+</div>
+</section>
+<!-- Editorial Section -->
+<section class="mt-32 bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Lifestyle" class="w-full h-full object-cover" data-alt="Sophisticated person in a suit checking their watch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRfoukaZlRr6sQcvwKFFR_qTMfCOTwH_jhhNs5CvBBWiMAVjGyBAO9Ipvz8lFVb6VCWYRO8x34f1lD92nfq3FoSdooWbCxZHoBlgWCBfykiZMZzpCodoE95fozWJa2FH4KvIAdltZyFj1vfCCYHq01JaoAVZ5rsxpS2wZ8XqKtCPe1czAaW3SmMtkxwRIeyrmWb6GxsyoOJmO6rt19IxT858JK7SFi_jU93OIcQwm-x50MczXsZFSCbdFa7zUe0VO_76DrAzW-3sU"/>
+</div>
+<div class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary rounded-xl flex items-center justify-center p-8 hidden lg:flex">
+<p class="text-on-primary font-headline text-lg font-bold leading-tight">Crafted for the Modern Architect</p>
+</div>
+</div>
+<div class="space-y-8">
+<h2 class="text-4xl font-headline font-extrabold tracking-tight text-on-surface">The Geometry of Time</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed font-body">
+                        The Chrono 01 isn't just a timepiece; it's a structural manifesto. Every curve and angle has been mathematically derived to create a silhouette that commands presence without shouting.
+                    </p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<span class="text-3xl font-headline font-black text-primary">0.05mm</span>
+<p class="text-xs font-label text-on-surface-variant uppercase mt-1">Tolerance Precision</p>
+</div>
+<div>
+<span class="text-3xl font-headline font-black text-primary">Titanium</span>
+<p class="text-xs font-label text-on-surface-variant uppercase mt-1">Grade 5 Shell</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="max-w-7xl mx-auto px-8 py-32">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-3xl font-headline font-extrabold text-on-surface">Community Reflections</h2>
+<div class="flex items-center space-x-4 mt-2">
+<div class="flex text-on-tertiary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0.5;">star_half</span>
+</div>
+<span class="font-bold text-on-surface">4.8 / 5.0</span>
+</div>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-bold hover:scale-105 transition-transform">Write a Review</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Review Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10">
+<div class="flex items-center justify-between mb-4">
+<div class="flex text-on-tertiary-container scale-75 origin-left">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-xs font-label text-on-surface-variant">2 months ago</span>
+</div>
+<p class="font-headline font-bold text-lg mb-2">Exceptional Build Quality</p>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                        "The weight of the titanium is perfect—light yet incredibly sturdy. The sapphire crystal is remarkably clear, almost invisible at certain angles."
+                    </p>
+<div class="flex items-center space-x-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-xs">AM</div>
+<span class="text-sm font-bold">Arthur M.</span>
+<span class="material-symbols-outlined text-on-tertiary-container text-sm">verified</span>
+</div>
+</div>
+<!-- Review Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10">
+<div class="flex items-center justify-between mb-4">
+<div class="flex text-on-tertiary-container scale-75 origin-left">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-xs font-label text-on-surface-variant">1 month ago</span>
+</div>
+<p class="font-headline font-bold text-lg mb-2">A Design Statement</p>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                        "I work in industrial design and this is one of the most cohesive products I own. The attention to the typography on the dial is unmatched."
+                    </p>
+<div class="flex items-center space-x-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-xs">SL</div>
+<span class="text-sm font-bold">Sarah L.</span>
+<span class="material-symbols-outlined text-on-tertiary-container text-sm">verified</span>
+</div>
+</div>
+<!-- Review Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10">
+<div class="flex items-center justify-between mb-4">
+<div class="flex text-on-tertiary-container scale-75 origin-left">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<span class="text-xs font-label text-on-surface-variant">3 weeks ago</span>
+</div>
+<p class="font-headline font-bold text-lg mb-2">Almost Perfect</p>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                        "The strap takes a few days to break in, but once it does, it's the most comfortable watch in my collection. Shipping was extremely fast."
+                    </p>
+<div class="flex items-center space-x-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-xs">RK</div>
+<span class="text-sm font-bold">Robert K.</span>
+<span class="material-symbols-outlined text-on-tertiary-container text-sm">verified</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto font-['Inter'] text-sm leading-relaxed text-slate-900 dark:text-slate-50">
+<div class="space-y-4">
+<div class="text-xl font-bold tracking-tighter text-slate-900 dark:text-slate-50">Digital Atelier</div>
+<p class="text-slate-500 dark:text-slate-400">Pioneering the intersection of architectural precision and wearable luxury since 2024.</p>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="font-bold text-slate-900 dark:text-slate-50 uppercase tracking-widest text-xs mb-2">Shop</span>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 transition-colors" href="#">New Arrivals</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 transition-colors" href="#">Chronographs</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 transition-colors" href="#">Limited Editions</a>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="font-bold text-slate-900 dark:text-slate-50 uppercase tracking-widest text-xs mb-2">Support</span>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 transition-colors" href="#">Shipping</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 transition-colors" href="#">Returns</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 transition-colors" href="#">Contact</a>
+</div>
+<div class="space-y-4">
+<span class="font-bold text-slate-900 dark:text-slate-50 uppercase tracking-widest text-xs mb-2">Newsletter</span>
+<div class="flex items-center border-b border-outline p-1">
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full" placeholder="Email address" type="email"/>
+<button class="material-symbols-outlined">arrow_forward</button>
+</div>
+</div>
+</div>
+<div class="px-8 py-6 text-center text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-800">
+            © 2024 Digital Atelier. All rights reserved.
+        </div>
+</footer>
+</body></html>

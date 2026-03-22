@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | Digital Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-container": "#57657b",
+                        "surface-bright": "#f7f9fb",
+                        "on-tertiary-fixed": "#002113",
+                        "secondary": "#515f74",
+                        "on-secondary-fixed-variant": "#3a485c",
+                        "surface-tint": "#565e74",
+                        "background": "#f7f9fb",
+                        "secondary-container": "#d5e3fd",
+                        "on-error": "#ffffff",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f7f9fb",
+                        "tertiary-fixed": "#6ffbbe",
+                        "surface-container-highest": "#e0e3e5",
+                        "tertiary-container": "#002113",
+                        "surface-variant": "#e0e3e5",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#009668",
+                        "on-primary-container": "#7c839b",
+                        "surface-container-low": "#f2f4f6",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "surface-container": "#eceef0",
+                        "primary": "#000000",
+                        "inverse-surface": "#2d3133",
+                        "inverse-primary": "#bec6e0",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#dae2fd",
+                        "outline": "#76777d",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#45464d",
+                        "primary-container": "#131b2e",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "outline-variant": "#c6c6cd",
+                        "secondary-fixed": "#d5e3fd",
+                        "on-surface": "#191c1e",
+                        "inverse-on-surface": "#eff1f3",
+                        "surface-dim": "#d8dadc",
+                        "secondary-fixed-dim": "#b9c7e0",
+                        "on-secondary-fixed": "#0d1c2f",
+                        "on-primary-fixed": "#131b2e",
+                        "primary-fixed-dim": "#bec6e0",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "on-error-container": "#93000a",
+                        "on-background": "#191c1e",
+                        "tertiary": "#000000"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(25, 28, 30, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(25,28,30,0.06)]">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-full mx-auto">
+<div class="text-2xl font-black tracking-tighter text-slate-900 dark:text-slate-50 font-headline">Digital Atelier</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-manrope tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-50 transition-colors" href="#">Collections</a>
+<a class="font-manrope tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-50 transition-colors" href="#">New Arrivals</a>
+<a class="font-manrope tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-50 transition-colors" href="#">Archive</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="hover:opacity-70 transition-opacity duration-300 scale-95 active:scale-100 transition-transform">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-50">search</span>
+</button>
+<button class="hover:opacity-70 transition-opacity duration-300 scale-95 active:scale-100 transition-transform">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-50">person</span>
+</button>
+<button class="hover:opacity-70 transition-opacity duration-300 scale-95 active:scale-100 transition-transform">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-50">shopping_bag</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section: The Atelier Philosophy -->
+<section class="relative min-h-[921px] flex items-center px-8 md:px-16 overflow-hidden bg-surface">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-90 brightness-95" data-alt="Minimalist modern glass building skyscraper reflection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpHS6YS10UNJxfA6cQxbH1bURZrkwBGZSN-7DJxobj7I2DPVlh0MO0_DA0Gbsy2DbjwvvdBmMbQmlgUKC5Do_mw76mIUemHIEShuoUzdLlyL3B4P8hY7hp6yCcczHfyljjW6hiUP0ynW2B9QJDCYbYZOPmIOpCVxe-uRrlMes8kDYbgMPY_4xMqjt4aInWaj9ULOuBx1m4oCmAEYJyI-XxAV_7LzEEVuppK6aFA9Tcwkfm2FXG-YXKR7j8T9_NDv4RGffUQV6X2KE"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-4xl">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant mb-6 block">Our Vision</span>
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold tracking-tighter text-on-surface leading-none mb-8">
+                    The Atelier <br/>Philosophy
+                </h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-xl leading-relaxed">
+                    Rejecting the ephemeral. We curate a digital landscape where structural precision meets editorial soul.
+                </p>
+</div>
+</section>
+<!-- Our Story: Asymmetric Editorial Layout -->
+<section class="py-32 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-5 relative">
+<div class="absolute -top-12 -left-12 w-32 h-32 bg-tertiary-fixed-dim/20 rounded-full blur-3xl"></div>
+<img class="rounded-xl editorial-shadow w-full aspect-[4/5] object-cover relative z-10" data-alt="Monochrome architectural detail of concrete stairs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRHaBaT_6YZGRJm8wqvP6Qox-eSLSExVqcL8x6dDBPrZ1OVvSKIMwafJ6c8GIo0rs85xE199vAAtgWzxScZGlcxqo32sFs3_S0RAwl7OzeFRGMu-qsY-83FW22YiZFkM9W2oXxgUZiQEQp4LLx7oHU35_jv1BzQb53EfIK1-3JY5LwgYKR4VLHxz_HsTw_rL1HrHGCfjugCEPxnMDI1I4C_nA2wn4xKJVHX5klc7MS21yOFepuvUiS2jqYdsU7pPSQcnnjU-7jnjE"/>
+<div class="absolute -bottom-8 -right-8 bg-white p-8 rounded-xl editorial-shadow hidden md:block z-20">
+<span class="font-headline text-4xl font-black">Est. 2024</span>
+</div>
+</div>
+<div class="lg:col-span-7 space-y-8">
+<h2 class="font-headline text-4xl font-bold tracking-tight text-on-surface">Our Story: <br/>Architectural Integrity</h2>
+<div class="space-y-6 text-lg text-on-surface-variant font-body leading-relaxed max-w-2xl">
+<p>
+                            Digital Atelier was founded on the belief that digital space should be as carefully considered as physical architecture. We moved away from the "boxed-in" nature of traditional web experiences to create something fluid yet disciplined.
+                        </p>
+<p>
+                            Every interaction is a deliberate stroke. Every pixel serves a function. We don't just build interfaces; we construct digital atmospheres that prioritize breathing room, typography as texture, and the quiet authority of well-placed negative space.
+                        </p>
+</div>
+<div class="pt-4">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-headline font-bold text-sm uppercase tracking-widest hover:bg-primary-container transition-all scale-100 active:scale-95">
+                            Learn our Process
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values: Bento Grid -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20 text-center max-w-2xl mx-auto">
+<h2 class="font-headline text-4xl font-bold mb-4">Foundation Principles</h2>
+<p class="text-on-surface-variant">The invisible scaffolding that supports every creation at the Atelier.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Sustainability -->
+<div class="bg-surface-container-lowest p-10 rounded-xl editorial-shadow border border-outline-variant/10 group hover:bg-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6 group-hover:text-tertiary-fixed">eco</span>
+<h3 class="font-headline text-2xl font-bold mb-4 group-hover:text-on-primary">Sustainability</h3>
+<p class="text-on-surface-variant leading-relaxed group-hover:text-on-primary/70">
+                            Digital longevity over fleeting trends. We build systems designed to evolve and endure, reducing digital waste.
+                        </p>
+</div>
+<!-- Craftsmanship -->
+<div class="bg-surface-container-lowest p-10 rounded-xl editorial-shadow border border-outline-variant/10 group hover:bg-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6 group-hover:text-tertiary-fixed">architecture</span>
+<h3 class="font-headline text-2xl font-bold mb-4 group-hover:text-on-primary">Craftsmanship</h3>
+<p class="text-on-surface-variant leading-relaxed group-hover:text-on-primary/70">
+                            Precision is our primary tool. From micro-interactions to macro-layouts, every detail is hand-refined.
+                        </p>
+</div>
+<!-- Minimalism -->
+<div class="bg-surface-container-lowest p-10 rounded-xl editorial-shadow border border-outline-variant/10 group hover:bg-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6 group-hover:text-tertiary-fixed">format_align_left</span>
+<h3 class="font-headline text-2xl font-bold mb-4 group-hover:text-on-primary">Minimalism</h3>
+<p class="text-on-surface-variant leading-relaxed group-hover:text-on-primary/70">
+                            The art of removal. We find the essence of a message by stripping away the noise until only the truth remains.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Studio Section: Immersive Gallery -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">The Environment</span>
+<h2 class="font-headline text-4xl font-bold mt-2">Where Form Meets Flow</h2>
+</div>
+<p class="text-on-surface-variant max-w-sm">Our studio in the heart of the district serves as a physical manifestation of our design language.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="md:col-span-2 lg:col-span-2 overflow-hidden rounded-xl h-96 group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Bright modern minimalist open office space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW-IqyKAYHuyHZ1lnbBjPt-XY-rry9D-X3HbyiM4icNRBgup8IKj-FfH0NlSYBdMmA8Dc-eucvJ0nIqunMP0rdIWSqeeVSTVDFZkgpIcxTAVpxfmX3LtpO4ZZhJvQV5V4xyoDe5y6b4WvX9GUwzjY_T_DY5dYGbVjAp4wGQBfELEze1lBzRhv7AjoIow5AqpmUAAdk-zdun5ttYVJbyN_odQLDw_SYeqbSq3vCJC7xqSsuCBW7HNY0bX5hSsLerl7Vtx_e1FRkoHk"/>
+</div>
+<div class="overflow-hidden rounded-xl h-96 group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close up of architect desk with sketches" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP1kXOXQXHwWdS2QWTn3d4MvxAuGvonCV_pZcvL0_jyX5XyhNKYNBSa12vb-UgmsYRx5wpJ909c4AvpW91WlvQK6S9Tk8iRxPWVxG-mS4zRjOBD8IUZ7yG5MOcvsgmoID5uReSydaCq_FDB4UDZ0G8LjLP0WPvkUnhA5o8TGMM5FuC0G6AJAnVSM2yqlzbGnTMIfwClB9oKUFhTYTRUrTUL-bYXwzdx-AG8q4POEIfF1pZYbB7ZbbH3e-mi5jTZd13g7HfWer35gU"/>
+</div>
+<div class="overflow-hidden rounded-xl h-80 group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Collaborative team meeting at a large table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6x9o2wTLR1RIZX6Nz3GJz9olcmvqyH1tJDxZW350iqQe1peVTshvMDJfHl8z75eh_3jRBV3fRzMVnoYK8LjVqN9rFC5e3YLBcqtno2VdFzRquuPJYxLMR3MC615f3cQxJ93FJcXoEU8KHKZnC31RkFAlO_fS6gHEqR-4xbXJh7FhvZbh4suz-Sp8947wA5ShHBn7s_noDktuZa1qKPlY-uAyiBHfey4O43eVZfY5Rb-EYL5vcgGNNsnM0OQlLHwCNrYZ20QibWcg"/>
+</div>
+<div class="md:col-span-2 lg:col-span-2 overflow-hidden rounded-xl h-80 group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Abstract architectural lines and shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaFnaDkuGHru9UU7D9niUEz_YtaS85Q5ph0VDt1sKR4_4LVH3xW_HqklVqBCDKpWKRooF8zWWufgMHNV9zvYavfbB1ISDjV9t6xGevEgD4qSWHXSEvdQzBGnpcNO4gSjdQSEhVJWGX1hnqx4SY21xtZrmrD0S4DDhZM5zzBMoe7RU2sbYmvcM0goxI2l75UkvqR5ZRvpqpu4cz6nA5KQrc6QLk-hvSoS1IJtqkjJxVy-_wQuvumrhiLxctDiZOfnY6SEDTUT6Sw38"/>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-headline text-5xl md:text-6xl font-extrabold tracking-tighter mb-8 text-primary">Join the Archive.</h2>
+<p class="text-on-surface-variant text-xl mb-12 font-body">Experience the intersection of architecture and digital commerce first hand.</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary px-12 py-5 rounded-full font-headline font-bold text-sm uppercase tracking-widest hover:opacity-90 transition-all">
+                        View Collections
+                    </button>
+<button class="bg-surface-container-highest text-on-surface px-12 py-5 rounded-full font-headline font-bold text-sm uppercase tracking-widest hover:bg-surface-container-high transition-all">
+                        Contact Studio
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 mt-20 bg-slate-100 dark:bg-slate-900">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="font-manrope font-bold text-lg text-slate-900 dark:text-slate-50">Digital Atelier</div>
+<p class="font-inter text-xs tracking-wide uppercase text-slate-500 dark:text-slate-400">
+                    Redefining the digital horizon through architectural precision.
+                </p>
+<div class="text-slate-500 dark:text-slate-400 font-inter text-xs tracking-wide uppercase">
+                    © 2024 Digital Atelier. All rights reserved.
+                </div>
+</div>
+<div class="space-y-4">
+<div class="font-inter text-xs tracking-wide uppercase font-bold text-slate-900 dark:text-slate-50">Explore</div>
+<ul class="space-y-2">
+<li><a class="font-inter text-xs tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors" href="#">Sustainability</a></li>
+<li><a class="font-inter text-xs tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors" href="#">New Arrivals</a></li>
+<li><a class="font-inter text-xs tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors" href="#">Archives</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<div class="font-inter text-xs tracking-wide uppercase font-bold text-slate-900 dark:text-slate-50">Support</div>
+<ul class="space-y-2">
+<li><a class="font-inter text-xs tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="font-inter text-xs tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-inter text-xs tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<div class="font-inter text-xs tracking-wide uppercase font-bold text-slate-900 dark:text-slate-50">Studio</div>
+<p class="font-inter text-xs tracking-wide uppercase text-slate-500 dark:text-slate-400">
+                    1244 Design District<br/>
+                    Suite 400, Oslo<br/>
+                    studio@digitalatelier.com
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
