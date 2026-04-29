@@ -1,4 +1,5 @@
 import { getProductById } from '$lib/data/products';
+import { totalsFromSubtotal } from '$lib/order/totalsFromSubtotal';
 import { cart } from '$lib/stores/cart';
 import type { ShippingInfo } from '$lib/types/shipping';
 import type { Order, OrderLine } from '$lib/types/order';
@@ -28,9 +29,7 @@ export function placeOrder(shipping: ShippingInfo): Order {
 		subtotal += p.price * l.qty;
 	}
 
-	const tax = Math.round(subtotal * 0.08 * 100) / 100;
-	const shippingCost = subtotal >= 500 || subtotal === 0 ? 0 : 25;
-	const total = Math.round((subtotal + tax + shippingCost) * 100) / 100;
+	const { tax, shippingCost, total } = totalsFromSubtotal(subtotal);
 
 	return {
 		id: randomId(),

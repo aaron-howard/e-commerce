@@ -51,6 +51,6 @@ export const collections: Collection[] = [
 	}
 ];
 
-export function getCollection(slug: string) {
+function getCollection(slug: string) {
 	return collections.find((c) => c.slug === slug);
 }

@@ -1,19 +1,13 @@
 import { browser } from '$app/environment';
 import type { Order } from '$lib/types/order';
+import { readJsonArray } from '$lib/stores/readJsonArray';
 import { get, writable } from 'svelte/store';
 
 const STORAGE_KEY = 'da-orders';
 
 function load(): Order[] {
 	if (!browser) return [];
-	try {
-		const raw = localStorage.getItem(STORAGE_KEY);
-		if (!raw) return [];
-		const parsed = JSON.parse(raw) as Order[];
-		return Array.isArray(parsed) ? parsed : [];
-	} catch {
-		return [];
-	}
+	return readJsonArray(STORAGE_KEY) as Order[];
 }
 
 function persist(list: Order[]) {

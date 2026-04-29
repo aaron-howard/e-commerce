@@ -34,5 +34,3 @@ function createCheckoutStore() {
 }
 
 export const checkout = createCheckoutStore();
-
-export type { ShippingInfo };

@@ -1,21 +1,16 @@
 import { browser } from '$app/environment';
 import { getProductById } from '$lib/data/products';
+import { totalsFromSubtotal } from '$lib/order/totalsFromSubtotal';
+import { readJsonArray } from '$lib/stores/readJsonArray';
 import { writable, derived, get } from 'svelte/store';
 
-export type CartLine = { productId: string; qty: number };
+type CartLine = { productId: string; qty: number };
 
 const STORAGE_KEY = 'da-cart';
 
 function readStorage(): CartLine[] {
 	if (!browser) return [];
-	try {
-		const raw = localStorage.getItem(STORAGE_KEY);
-		if (!raw) return [];
-		const parsed = JSON.parse(raw) as CartLine[];
-		return Array.isArray(parsed) ? parsed : [];
-	} catch {
-		return [];
-	}
+	return readJsonArray(STORAGE_KEY) as CartLine[];
 }
 
 function writeStorage(lines: CartLine[]) {
@@ -73,12 +68,9 @@ export const cartTotals = derived(cart, ($c) => {
 		const p = getProductById(line.productId);
 		if (p && !p.soldOut) subtotal += p.price * line.qty;
 	}
-	const tax = Math.round(subtotal * 0.08 * 100) / 100;
-	const shippingCost = subtotal >= 500 || subtotal === 0 ? 0 : 25;
-	const total = Math.round((subtotal + tax + shippingCost) * 100) / 100;
-	return { subtotal, tax, shippingCost, total };
+	return { subtotal, ...totalsFromSubtotal(subtotal) };
 });
 
-export function getCartSnapshot() {
+function getCartSnapshot() {
 	return get(cart);
 }
