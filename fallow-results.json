@@ -2,21 +2,21 @@
   "kind": "combined",
   "schema_version": 11,
   "version": "3.17.0",
-  "elapsed_ms": 70,
+  "elapsed_ms": 60,
   "check": {
     "schema_version": 9,
     "version": "3.17.0",
-    "elapsed_ms": 60,
-    "total_issues": 4,
+    "elapsed_ms": 49,
+    "total_issues": 0,
     "entry_points": {
-      "total": 23,
+      "total": 24,
       "sources": {
-        "package.json": 1,
+        "package.json": 2,
         "plugin": 22
       }
     },
     "summary": {
-      "total_issues": 4,
+      "total_issues": 0,
       "unused_files": 0,
       "unused_exports": 0,
       "unused_types": 0,
@@ -39,7 +39,7 @@
       "duplicate_exports": 0,
       "type_only_dependencies": 0,
       "test_only_dependencies": 0,
-      "dev_dependencies_in_production": 4,
+      "dev_dependencies_in_production": 0,
       "circular_dependencies": 0,
       "re_export_cycles": 0,
       "boundary_violations": 0,
@@ -72,92 +72,7 @@
     "duplicate_exports": [],
     "type_only_dependencies": [],
     "test_only_dependencies": [],
-    "dev_dependencies_in_production": [
-      {
-        "package_name": "@sveltejs/kit",
-        "path": "package.json",
-        "line": 21,
-        "actions": [
-          {
-            "type": "move-to-prod",
-            "auto_fixable": false,
-            "description": "Move to dependencies (production code imports this at runtime)",
-            "note": "A production-only install (`pnpm install --prod`) omits devDependencies, so this import would break at runtime"
-          },
-          {
-            "type": "add-to-config",
-            "auto_fixable": false,
-            "description": "Add \"@sveltejs/kit\" to ignoreDependencies in fallow config",
-            "config_key": "ignoreDependencies",
-            "value": "@sveltejs/kit",
-            "value_schema": "https://raw.githubusercontent.com/fallow-rs/fallow/main/schema.json#/properties/ignoreDependencies/items"
-          }
-        ]
-      },
-      {
-        "package_name": "@tailwindcss/forms",
-        "path": "package.json",
-        "line": 23,
-        "actions": [
-          {
-            "type": "move-to-prod",
-            "auto_fixable": false,
-            "description": "Move to dependencies (production code imports this at runtime)",
-            "note": "A production-only install (`pnpm install --prod`) omits devDependencies, so this import would break at runtime"
-          },
-          {
-            "type": "add-to-config",
-            "auto_fixable": false,
-            "description": "Add \"@tailwindcss/forms\" to ignoreDependencies in fallow config",
-            "config_key": "ignoreDependencies",
-            "value": "@tailwindcss/forms",
-            "value_schema": "https://raw.githubusercontent.com/fallow-rs/fallow/main/schema.json#/properties/ignoreDependencies/items"
-          }
-        ]
-      },
-      {
-        "package_name": "svelte",
-        "path": "package.json",
-        "line": 25,
-        "actions": [
-          {
-            "type": "move-to-prod",
-            "auto_fixable": false,
-            "description": "Move to dependencies (production code imports this at runtime)",
-            "note": "A production-only install (`pnpm install --prod`) omits devDependencies, so this import would break at runtime"
-          },
-          {
-            "type": "add-to-config",
-            "auto_fixable": false,
-            "description": "Add \"svelte\" to ignoreDependencies in fallow config",
-            "config_key": "ignoreDependencies",
-            "value": "svelte",
-            "value_schema": "https://raw.githubusercontent.com/fallow-rs/fallow/main/schema.json#/properties/ignoreDependencies/items"
-          }
-        ]
-      },
-      {
-        "package_name": "tailwindcss",
-        "path": "package.json",
-        "line": 27,
-        "actions": [
-          {
-            "type": "move-to-prod",
-            "auto_fixable": false,
-            "description": "Move to dependencies (production code imports this at runtime)",
-            "note": "A production-only install (`pnpm install --prod`) omits devDependencies, so this import would break at runtime"
-          },
-          {
-            "type": "add-to-config",
-            "auto_fixable": false,
-            "description": "Add \"tailwindcss\" to ignoreDependencies in fallow config",
-            "config_key": "ignoreDependencies",
-            "value": "tailwindcss",
-            "value_schema": "https://raw.githubusercontent.com/fallow-rs/fallow/main/schema.json#/properties/ignoreDependencies/items"
-          }
-        ]
-      }
-    ],
+    "dev_dependencies_in_production": [],
     "circular_dependencies": [],
     "re_export_cycles": [],
     "boundary_violations": [],
@@ -194,15 +109,15 @@
   "health": {
     "findings": [],
     "summary": {
-      "files_analyzed": 50,
-      "functions_analyzed": 82,
+      "files_analyzed": 51,
+      "functions_analyzed": 85,
       "functions_above_threshold": 0,
       "max_cyclomatic_threshold": 20,
       "max_cognitive_threshold": 15,
       "max_crap_threshold": 30.0,
       "max_unit_size_threshold": 60,
-      "files_scored": 26,
-      "average_maintainability": 94.5,
+      "files_scored": 27,
+      "average_maintainability": 94.6,
       "coverage_model": "static_estimated",
       "severity_critical_count": 0,
       "severity_high_count": 0,
@@ -216,28 +131,28 @@
       "p90_cyclomatic": 4,
       "hotspot_count": 0,
       "hotspot_top_pct_count": 0,
-      "maintainability_avg": 94.5,
+      "maintainability_avg": 94.6,
       "maintainability_low_pct": 0.0,
       "unused_dep_count": 0,
       "unused_deps_per_k_files": 0.0,
       "circular_dep_count": 0,
       "circular_deps_per_k_files": 0.0,
       "counts": {
-        "total_files": 50,
+        "total_files": 51,
         "total_exports": 29,
         "dead_files": 0,
         "dead_exports": 0,
-        "total_lines": 6164,
-        "files_scored": 26,
+        "total_lines": 6195,
+        "files_scored": 27,
         "total_deps": 0
       },
       "unit_size_profile": {
-        "low_risk": 82.9,
-        "medium_risk": 3.7,
-        "high_risk": 4.9,
-        "very_high_risk": 8.5
+        "low_risk": 83.5,
+        "medium_risk": 3.5,
+        "high_risk": 4.7,
+        "very_high_risk": 8.2
       },
-      "functions_over_60_loc_per_k": 85.4,
+      "functions_over_60_loc_per_k": 82.4,
       "unit_interfacing_profile": {
         "low_risk": 98.8,
         "medium_risk": 1.2,
@@ -246,7 +161,7 @@
       },
       "p95_fan_in": 7,
       "coupling_high_pct": 0.0,
-      "total_loc": 6164
+      "total_loc": 6195
     },
     "file_scores": [
       {
@@ -373,6 +288,20 @@
         "function_count": 1,
         "lines": 8,
         "crap_max": 12.0,
+        "crap_above_threshold": 0
+      },
+      {
+        "path": "tests/smoke.test.js",
+        "fan_in": 0,
+        "fan_out": 0,
+        "dead_code_ratio": 0.0,
+        "complexity_density": 0.19,
+        "maintainability_index": 96.5,
+        "total_cyclomatic": 6,
+        "total_cognitive": 1,
+        "function_count": 3,
+        "lines": 31,
+        "crap_max": 7.5,
         "crap_above_threshold": 0
       },
       {
@@ -618,7 +547,7 @@
       "since": "6 months",
       "min_commits": 3,
       "files_analyzed": 0,
-      "files_excluded": 26,
+      "files_excluded": 27,
       "shallow_clone": false
     },
     "large_functions": [
@@ -808,16 +737,9 @@
       ]
     }
   },
-  "next_steps": [
-    {
-      "id": "audit-changed",
-      "command": "fallow audit",
-      "reason": "gate only the files your branch changed (auto-detects the base)"
-    }
-  ],
   "_meta": {
     "telemetry": {
-      "analysis_run_id": "run_1d427b9e27fac1e7"
+      "analysis_run_id": "run_e0bc5c66c5cad954"
     }
   }
 }
