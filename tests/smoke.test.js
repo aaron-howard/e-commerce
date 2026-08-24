@@ -14,6 +14,15 @@ test('package.json declares the e-commerce app', () => {
 	assert.ok(pkg.scripts.check);
 });
 
+test('runtime packages live in dependencies, not devDependencies', () => {
+	const pkg = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'));
+	const production = ['@sveltejs/kit', '@tailwindcss/forms', 'svelte', 'tailwindcss'];
+	for (const name of production) {
+		assert.ok(pkg.dependencies?.[name], `${name} should be in dependencies`);
+		assert.equal(pkg.devDependencies?.[name], undefined, `${name} should not be a devDependency`);
+	}
+});
+
 test('SvelteKit entrypoints exist', () => {
 	assert.ok(readFileSync(join(root, 'src/app.html'), 'utf8').includes('%sveltekit.body%'));
 	assert.ok(readFileSync(join(root, 'svelte.config.js'), 'utf8').length > 0);

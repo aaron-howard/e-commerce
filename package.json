@@ -19,15 +19,17 @@
     "lint": "npm run check",
     "test": "node --test ./tests/smoke.test.js"
   },
+  "dependencies": {
+    "@sveltejs/kit": "^2.50.2",
+    "@tailwindcss/forms": "^0.5.11",
+    "svelte": "^5.51.0",
+    "tailwindcss": "^4.1.18"
+  },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^7.0.0",
-    "@sveltejs/kit": "^2.50.2",
     "@sveltejs/vite-plugin-svelte": "^6.2.4",
-    "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/vite": "^4.1.18",
-    "svelte": "^5.51.0",
     "svelte-check": "^4.4.2",
-    "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
     "vite": "^7.3.1"
   }
